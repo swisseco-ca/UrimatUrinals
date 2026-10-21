@@ -27,3 +27,12 @@ Approved subscriptions, online consumables ordering and customer portal. None is
 
 ## Hosting
 `.openai/hosting.json` identifies the intended new draft project. The existing www domain belongs to an earlier Sites project. Do not attach that domain, alter DNS or replace production without migration authorization. GitHub is a source copy, not an automatic Sites deployment. This revision has not been synchronized to or published on Sites by a publishing tool.
+
+## Expansion delivered
+- Eight guide pairs: retrofit planning, operating costs, reading water bills, cleaning handover, pilots, specifications, service observations and waterless/flush comparison.
+- Airports and fitness industry pairs.
+- Dedicated calculator and local brief URLs; no lead-submission endpoint is implied.
+- Six topical image concepts with captions, provenance and production WebP assets.
+- Owner imagery restriction recorded in MASTER-PROMPT.md.
+
+Remaining: real installation media and evidence, approved technical documents, live lead delivery, location-specific content and migration planning. No DNS changes in this expansion.

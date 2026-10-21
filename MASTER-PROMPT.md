@@ -45,3 +45,6 @@ Verify mobile and desktop layouts, keyboard use, focus styles, contrast, image s
 
 ## First-build instruction
 Start now with Phase 1 using the above direction. Reuse verified public product imagery where accessible, keep the hero focused on water conservation and a working calculator, and make the quote planner useful without implying delivery. Keep later phases in a visible project backlog rather than filling the draft with empty pages.
+
+## Mandatory imagery constraint (21 October 2026)
+Use imagery only directly relevant to urinals, commercial washrooms and fixtures, or saving water. No generic office atriums, campuses, restaurants, retail interiors or arena scenes. Sector pages must show washroom-related imagery or useful water-conservation visuals. Generated scenes must be labelled as concepts and must never be presented as actual URIMAT installations.

@@ -20,3 +20,5 @@ for lang,d in data.items():
 # Phase 2 preserves the homepage calculator and adds translated content pages.
 from phase2 import build as build_phase2
 build_phase2(root)
+from expansion import build as build_expansion
+build_expansion(root)

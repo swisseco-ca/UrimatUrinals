@@ -32,3 +32,6 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
 The builder regenerates HTML/CSS and logo concepts; `dist/app.js` and the product PNG are retained source assets, so do not delete `dist` before building. Structural checks validate local links/assets/fragments, translated pairs and private indexing directives. Browser acceptance checks should also cover mobile/desktop overflow, keyboard navigation, loaded imagery, calculator validation and actual planner downloads.
 
 The hosting project ID in `.openai/hosting.json` is the new private draft. Preserve the earlier project's `www.urimaturinals.ca` domain and DNS. A GitHub push does not publish this draft to OpenAI Sites.
+
+## Image-led expansion
+54 bilingual pages: eight additional planning guide pairs, two sector pairs (airports and fitness), dedicated calculator and local project-brief pages. Six distinct washroom/fixture/water-conservation concept images are clearly labelled and optimized as WebP. No generic building imagery. Existing live site and DNS remain outside this draft's deployment scope.

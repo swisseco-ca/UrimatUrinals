@@ -30,7 +30,7 @@ class SiteTests(unittest.TestCase):
 
     def test_translated_pairs_are_reciprocal_and_private(self):
         pages=list(ROOT.glob('en/**/index.html'))+list(ROOT.glob('fr/**/index.html'))
-        self.assertEqual(len(pages),30)
+        self.assertEqual(len(pages),54)
         for file in pages:
             page=Page(file.read_text(encoding='utf-8')); language=file.relative_to(ROOT).parts[0]
             with self.subTest(page=file.relative_to(ROOT)):
