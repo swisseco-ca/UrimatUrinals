@@ -16,3 +16,7 @@ for lang,d in data.items():
 (root/'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url=/en/"><title>URIMAT Canada</title><a href="/en/">English</a> <a href="/fr/">Français</a></html>')
 (root/'favicon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#173d32"/><text x="32" y="46" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="42" fill="#daf49a">U</text></svg>')
 (root/'robots.txt').write_text('User-agent: *\nDisallow: /\n')
+
+# Phase 2 preserves the homepage calculator and adds translated content pages.
+from phase2 import build as build_phase2
+build_phase2(root)
