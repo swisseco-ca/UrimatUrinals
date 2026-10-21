@@ -1,0 +1,7 @@
+const $=id=>document.getElementById(id); const locale=COPY.lang+'-CA';
+const num=n=>new Intl.NumberFormat(locale,{maximumFractionDigits:0}).format(n);
+const money=n=>new Intl.NumberFormat(locale,{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(n);
+function calculate(v){const water=v[0]*v[1]*v[2]*v[3],gross=water/1000*v[4],net=gross+v[5]-v[6];return {water,gross,net,payback:net>0?v[7]/net:null};}
+function update(){if(!$('calculator').checkValidity()){for(const id of ['water','gross','net','payback'])$(id).textContent='…';return;}const r=calculate(Array.from({length:8},(_,i)=>Number($('v'+i).value)));$('water').textContent=num(r.water)+' L';$('gross').textContent=money(r.gross);$('net').textContent=money(r.net);$('payback').textContent=r.payback===null?COPY.none:new Intl.NumberFormat(locale,{maximumFractionDigits:1}).format(r.payback)+' '+COPY.years;}
+$('calculator').addEventListener('input',update);$('calculator').addEventListener('submit',e=>e.preventDefault());update();
+$('brief').addEventListener('submit',e=>{e.preventDefault();const text=['URIMAT | '+$('city').value,$('facility').value,'Quantity / Quantité: '+$('quantity').value,'1 888 270 9899','Local project brief / Descriptif local'].join('\n');const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=COPY.filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('status').textContent=COPY.status;});
